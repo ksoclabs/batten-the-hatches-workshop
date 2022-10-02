@@ -6,10 +6,13 @@ dev_addr: 0.0.0.0:8080
 theme:
   name: 'material'
   palette:
-    primary: 'red'
-    accent: 'red'
+    primary: 'indigo'
+    accent: 'indigo'
   icon:
     logo: material/cloud
+  font:
+    text: Roboto
+    code: Roboto Mono
 plugins:
   - search:
       separator: '[\s\-\.]+'
