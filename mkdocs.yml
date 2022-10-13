@@ -20,6 +20,12 @@ plugins:
         - en
 nav:
   - Introduction: index.md
+  - Getting Started: setup.md
+  - Asset Inventory: inventory.md
+  - Cluster Configuration: cluster-configs.md
+  - Workload Configurations: workload-security.md
+  - RBAC Assessment: rbac.md
+  - Guardrails: guardrails.md
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
