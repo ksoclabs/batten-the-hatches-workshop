@@ -1,6 +1,9 @@
 # Batten Down the Hatches! A Cluster Security Journey
 
-In this hands-on workshop, the instructors will dive into the methods used to perform a successful real world Kubernetes security audit. Attendees will learn through instructor-led scenarios how to perform cluster / workload inventory, rapidly assess the security posture of workloads, enforce least privilege for end-users and service accounts, and comply with established compliance standards. Each workshop attendee will be provided with a pre-configured public cloud environment running real-world Kubernetes workloads. The tools and methodologies covered in this workshop will give attendees the real world experience to perform a rapid Kubernetes security posture audit in their own organization’s clusters.
+In this hands-on workshop, the instructors will dive into the methods used to perform a successful real world Kubernetes security audit.
+Attendees will learn through instructor-led scenarios how to perform cluster / workload inventory, rapidly assess the security posture of workloads, enforce least privilege for end-users and service accounts, and comply with established compliance standards. 
+Each workshop attendee will be provided with a pre-configured public cloud environment running real-world Kubernetes workloads. 
+The tools and methodologies covered in this workshop will give attendees the real world experience to perform a rapid Kubernetes security posture audit in their own organization’s clusters.
 
 !!! note "Use the Copy to Clipboard Feature"
 Each terminal command block in this guide has a double-square icon on the far right side which automatically copies the content to your paste buffer to make things easier to follow along.

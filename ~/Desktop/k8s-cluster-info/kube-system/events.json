@@ -1,0 +1,38 @@
+{
+    "kind": "EventList",
+    "apiVersion": "v1",
+    "metadata": {
+        "resourceVersion": "195637325"
+    },
+    "items": [
+        {
+            "metadata": {
+                "name": "metrics-server.171bf54e0ad25fdc",
+                "namespace": "kube-system",
+                "uid": "f7a069dd-705a-492c-966f-f44f6fc15d97",
+                "resourceVersion": "195635946",
+                "creationTimestamp": "2022-10-08T01:56:42Z"
+            },
+            "involvedObject": {
+                "kind": "HelmRelease",
+                "namespace": "kube-system",
+                "name": "metrics-server",
+                "uid": "e84f4628-9939-4614-ae7b-b75aa9333771",
+                "apiVersion": "helm.fluxcd.io/v1",
+                "resourceVersion": "187699057"
+            },
+            "reason": "FailedReleaseSync",
+            "message": "synchronization of release 'metrics-server' in namespace 'kube-system' failed: failed to determine sync action for release: failed to retrieve Helm release: Kubernetes cluster unreachable: the server has asked for the client to provide credentials",
+            "source": {
+                "component": "helm-operator"
+            },
+            "firstTimestamp": "2022-10-08T01:56:42Z",
+            "lastTimestamp": "2022-10-18T10:56:49Z",
+            "count": 4981,
+            "type": "Warning",
+            "eventTime": null,
+            "reportingComponent": "",
+            "reportingInstance": ""
+        }
+    ]
+}

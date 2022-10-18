@@ -1,0 +1,55 @@
+==== START logs for container aws-vpc-cni-init of pod kube-system/aws-node-2kqbn ====
+Copying CNI plugin binaries ... 
++ PLUGIN_BINS='loopback portmap bandwidth aws-cni-support.sh'
++ for b in '$PLUGIN_BINS'
++ '[' '!' -f loopback ']'
++ for b in '$PLUGIN_BINS'
++ '[' '!' -f portmap ']'
++ for b in '$PLUGIN_BINS'
++ '[' '!' -f bandwidth ']'
++ for b in '$PLUGIN_BINS'
++ '[' '!' -f aws-cni-support.sh ']'
++ HOST_CNI_BIN_PATH=/host/opt/cni/bin
++ echo 'Copying CNI plugin binaries ... '
++ for b in '$PLUGIN_BINS'
++ install loopback /host/opt/cni/bin
++ for b in '$PLUGIN_BINS'
++ install portmap /host/opt/cni/bin
++ for b in '$PLUGIN_BINS'
++ install bandwidth /host/opt/cni/bin
++ for b in '$PLUGIN_BINS'
++ install aws-cni-support.sh /host/opt/cni/bin
++ echo 'Configure rp_filter loose... '
+Configure rp_filter loose... 
+++ curl -X PUT http://169.254.169.254/latest/api/token -H 'X-aws-ec2-metadata-token-ttl-seconds: 60'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    56  100    56    0     0  56000      0 --:--:-- --:--:-- --:--:-- 56000
++ TOKEN=AQAEAB1UfvFCiqdwq2E1SeTsGLSgHfIKw3vLfDHVxPqPfHK2aWTVCg==
+++ curl -H 'X-aws-ec2-metadata-token: AQAEAB1UfvFCiqdwq2E1SeTsGLSgHfIKw3vLfDHVxPqPfHK2aWTVCg==' http://169.254.169.254/latest/meta-data/local-ipv4
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    10  100    10    0     0  10000      0 --:--:-- --:--:-- --:--:-- 10000
++ HOST_IP=10.0.75.23
+++ ip -4 -o a
+++ grep 10.0.75.23/
+++ awk '{print $2}'
++ PRIMARY_IF=eth0
++ sysctl -w net.ipv4.conf.eth0.rp_filter=2
+net.ipv4.conf.eth0.rp_filter = 2
+2
++ cat /proc/sys/net/ipv4/conf/eth0/rp_filter
++ '[' false == true ']'
++ sysctl -e -w net.ipv4.tcp_early_demux=1
++ echo 'CNI init container done'
+net.ipv4.tcp_early_demux = 1
+CNI init container done
+==== END logs for container aws-vpc-cni-init of pod kube-system/aws-node-2kqbn ====
+==== START logs for container aws-node of pod kube-system/aws-node-2kqbn ====
+{"level":"info","ts":"2022-09-09T10:49:48.286Z","caller":"entrypoint.sh","msg":"Install CNI binary.."}
+{"level":"info","ts":"2022-09-09T10:49:48.302Z","caller":"entrypoint.sh","msg":"Starting IPAM daemon in the background ... "}
+{"level":"info","ts":"2022-09-09T10:49:48.303Z","caller":"entrypoint.sh","msg":"Checking for IPAM connectivity ... "}
+{"level":"info","ts":"2022-09-09T10:49:50.317Z","caller":"entrypoint.sh","msg":"Copying config file ... "}
+{"level":"info","ts":"2022-09-09T10:49:50.320Z","caller":"entrypoint.sh","msg":"Successfully copied CNI plugin binary and config file."}
+{"level":"info","ts":"2022-09-09T10:49:50.320Z","caller":"entrypoint.sh","msg":"Foregrounding IPAM daemon ..."}
+==== END logs for container aws-node of pod kube-system/aws-node-2kqbn ====

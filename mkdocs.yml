@@ -1,6 +1,6 @@
-site_name: Batten the Hatches! A Cluster Security Journey
+site_name: Batten the Hatches! Operation - Cluster lockdown
 repo_name: 'ksoclabs/batten-the-hatches-workshop'
-repo_url: 'https://https://github.com/ksoclabs/batten-the-hatches-workshop'
+repo_url: 'https://github.com/ksoclabs/batten-the-hatches-workshop'
 dev_addr: 0.0.0.0:8080
 
 theme:
@@ -20,12 +20,13 @@ plugins:
         - en
 nav:
   - Introduction: index.md
-  - Getting Started: setup.md
-  - Asset Inventory: inventory.md
-  - Cluster Configuration: cluster-configs.md
-  - Workload Configurations: workload-security.md
-  - RBAC Assessment: rbac.md
-  - Guardrails: guardrails.md
+  - Getting Started: 0-setup.md
+  - 1 Asset Inventory: 1-inventory.md
+  - 2 Cluster Configuration: 2-cluster-configs.md
+  - 3 Workload Configurations: 3-workload-security.md
+  - 4 RBAC Assessment: 4-rbac.md
+  - 5 Guardrails: 5-guardrails.md
+  - Wrap Up: 6-wrapup.md
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
