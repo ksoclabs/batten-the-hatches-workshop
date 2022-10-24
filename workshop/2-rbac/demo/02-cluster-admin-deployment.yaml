@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-default-sa
+  namespace: sec-ctx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: admin-default-sa
+  template:
+    metadata:
+      labels:
+        name: admin-default-sa
+    spec:
+#      serviceAccountName: default
+      containers:
+        - name: admin-default-sa
+          image: us.gcr.io/ksoc-public/ksoc-rbac:v0.0.3
+          imagePullPolicy: Always
+          env:
+            - name: LOG_LEVEL
+              value: info
+            - name: WELCOME_MSG
+              value: "SecurityCon NA 22 - Batten Down The Hatches workshop"

@@ -1,0 +1,62 @@
+site_name: Batten the Hatches! Operation - Cluster lockdown
+repo_name: 'ksoclabs/batten-the-hatches-workshop'
+repo_url: 'https://github.com/ksoclabs/batten-the-hatches-workshop'
+dev_addr: 0.0.0.0:8080
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  icon:
+    logo: material/cloud
+  font:
+    text: Roboto
+    code: Roboto Mono
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+nav:
+  - Introduction: index.md
+  - Getting Started: 0-setup.md
+  - 1 Asset Inventory: 1-inventory.md
+  - 2 Workload Configurations: 2-workload-security.md
+  - 3 RBAC Assessment: 3-rbac.md
+  - 4 Guardrails: 4-guardrails.md
+  - Wrap Up: 5-wrapup.md
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/ksoclabs/batten-the-hatches-workshop
