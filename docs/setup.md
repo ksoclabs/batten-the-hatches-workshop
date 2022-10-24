@@ -3,7 +3,7 @@
 1. Create a new Google account or choose an existing one, as you prefer.
 
 1. Right-click the button below, choose "Open in New Tab", and sign in.<br>
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/kubernetes/list?cloudshell=true&cloudshell_git_repo=https://github.com/securekubernetes/cloud-shell-setup&shellonly=true)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/kubernetes/list?cloudshell=true&cloudshell_git_repo=https://github.com/ksoclabs/batten-the-hatches-workshop&shellonly=true)
 
 1. Accept all Terms and Conditions as necessary.
 

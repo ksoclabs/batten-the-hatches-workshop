@@ -1,0 +1,3 @@
+
+Stops container increasing privileges
+🔥 E.g. `sudo`, `setuid`, Kernel vulnerabilities ...
