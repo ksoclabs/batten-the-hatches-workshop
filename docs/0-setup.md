@@ -24,7 +24,7 @@ These instructions will set up your workshop environment.
 
 The output should look similar to this (some workloads are crashing which is expected at this point):
 
-````
+```
 NAME                                             READY   STATUS                       RESTARTS   AGE
 all-at-once-6df575c7f4-zgfkz                     1/1     Running                      0          2m40s
 allow-no-privilege-escalation-749bc6b98c-swv9j   1/1     Running                      0          2m43s
