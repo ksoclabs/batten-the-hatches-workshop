@@ -3,7 +3,7 @@
 source "interactive-utils.sh"
 
 function login {
-  gcloud config set account "${GOOGLE_CLOUD_PROJECT}"
+  gcloud auth login
 }
 
 function getkubeconfig {
