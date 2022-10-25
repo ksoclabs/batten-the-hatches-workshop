@@ -58,6 +58,7 @@ function unnecessaryListPermission() {
 
     printFile "${ABSOLUTE_BASEDIR}"/01-list-secrets.yaml
     (cd "${ABSOLUTE_BASEDIR}" && printAndRun "kubectl apply -f 01-list-secrets.yaml")
+    sleep 5
     pressKeyToContinue
     message "====================================="
 
