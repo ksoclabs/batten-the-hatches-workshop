@@ -83,6 +83,7 @@ function usingClusterAdmin() {
   printFile "${ABSOLUTE_BASEDIR}"/02-cluster-admin-deployment.yaml
   (cd "${ABSOLUTE_BASEDIR}" && printAndRun "kubectl apply -f 02-cluster-admin-deployment.yaml")
   pressKeyToContinue
+  sleep 3
   message "====================================="
 
   printAndRun "kubectl logs \$(kubectl get pods  | awk '/^admin-default-sa/ {print \$1;exit}')"
