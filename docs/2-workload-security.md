@@ -1,7 +1,7 @@
 The workload security section of this workshop can be ran by executing the following command:
 
 ```bash
-./workshop/1-workloads/demo/interactive-demo.sh
+./1-workloads/demo/interactive-demo.sh
 ```
 
 This will start a demo that will walk you through the different concepts of workload security.

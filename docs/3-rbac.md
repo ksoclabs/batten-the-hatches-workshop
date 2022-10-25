@@ -1,7 +1,7 @@
 The RBAC security section of this workshop can be ran by executing the following command:
 
 ```bash
-./workshop/2-rbac/demo/interactive-demo.sh
+./2-rbac/demo/interactive-demo.sh
 ```
 
 This will start a demo that will walk you through the different concepts of RBAC security.
@@ -23,7 +23,7 @@ Now we know what we should be looking for its time to perform an audit of your c
 The audit section of this workshop can be ran by executing the following command:
 
 ```bash
-./workshop/3-audit/demo/interactive-demo.sh
+./3-audit/demo/interactive-demo.sh
 ```
 
 ## Guardrails
