@@ -11,7 +11,7 @@ These instructions will set up your workshop environment.
 5. Click on the "Connect" button
 6. Click on the "Run in Cloud Shell" button
 7. Copy the command that appears and paste it into the Cloud Shell and press enter
-8. Then run `git clone git@github.com:ksoclabs/batten-the-hatches-workshop.git`
+8. Then run `git clone https://github.com/ksoclabs/batten-the-hatches-workshop.git
 9. Then run `cd batten-the-hatches-workshop`
 10. Then run `cd workshop && make init`
 
