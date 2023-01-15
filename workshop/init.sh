@@ -2,15 +2,6 @@
 
 source "interactive-utils.sh"
 
-function login {
-  gcloud auth login
-}
-
-function getkubeconfig {
-  LOCATION="$(gcloud container clusters list --format='value(location)' | head -1 )"
-  gcloud container clusters get-credentials --zone="${LOCATION}" "${GOOGLE_CLOUD_PROJECT}"
-}
-
 function set_context {
   kubectl create namespace sec-ctx
   kubectl config set-context $(kubectl config current-context) --namespace=sec-ctx
@@ -27,12 +18,10 @@ function install_kubeaudit {
 }
 
 function install_workloads {
-  kubectlSilent apply -f 1-workloads/demo/
+  kubectl apply -f 1-workloads/demo/
 }
 
 function main {
-  login
-  getkubeconfig
   set_context
   install_ketall
   install_kubeaudit
