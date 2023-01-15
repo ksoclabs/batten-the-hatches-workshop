@@ -4,19 +4,20 @@ These instructions will set up your workshop environment.
 
 *PLEASE USE AN INCOGNITO BROWSER SESSION*
 
-1. Right-click the button below, choose "Open in New Tab", and sign in using the credentials provided by your instructors.<br>
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/kubernetes/list?cloudshell=true&cloudshell_git_repo=https://github.com/ksoclabs/batten-the-hatches-workshop&shellonly=true)
+1. Login to [https://console.cloud.google.com](https://console.cloud.google.com)
+2. Select your project from the top left dropdown
+3. Click on the "Hamburger" menu in the top left and select "Kubernetes Engine" from the menu that appears
+4. Click on your cluster name
+5. Click on the "Connect" button
+6. Click on the "Run in Cloud Shell" button
+7. Copy the command that appears and paste it into the Cloud Shell and press enter
+8. Then run `git clone git@github.com:ksoclabs/batten-the-hatches-workshop.git`
+9. Then run `cd batten-the-hatches-workshop`
+10. Then run `cd workshop && make init`
 
-1. Accept all Terms and Conditions as necessary.
+## Validation
 
-1. Click "Confirm" if prompted to clone the git repo into your Cloud Shell. 
-
-1. Once inside the Cloud Shell terminal, run the `make init` setup command in the `workshop` directory. This should create all of the necessary workloads and configurations for the workshop and authenticate you to the cluster:
-    ```console
-    cd workshop && make init
-    ```
-
-1. When the script is finished, verify it worked correctly.
+When the script is finished, verify it worked correctly.
 
     ```console
     kubectl get pods -n sec-ctx
